@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho com imagem responsiva */
+header {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header img.capa-canva {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Containers com balões degradê */
+section.sobre, section.contato {
+  background: linear-gradient(135deg, #f0e6f7 0%, #fce7f0 100%);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(204, 92, 140, 0.2);
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #cc5c8c;
+  margin-bottom: 1rem;
+}
+
+section.sobre p {
+  margin-bottom: 1rem;
+}
+
+/* Botões de contato */
+.botoes-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #cc5c8c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.btn i {
+  font-size: 1.2rem;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #a84a70;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #999;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+}
+
+/* Responsividade simples */
+@media (max-width: 480px) {
+  header {
+    height: 150px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
